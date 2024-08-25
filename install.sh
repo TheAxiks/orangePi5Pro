@@ -16,6 +16,9 @@ sed -i '1s/^/#include <stack>\n/' ../es-app/src/views/gamelist/ISimpleGameListVi
 make -j8
 sudo make install
 
+mkdir ~/roms
+sudo ln -sf ~/roms /roms
+
 # Fist theme
 cd ~
 curl -O https://emulationstation.org/downloads/themes/simple_latest.zip
@@ -35,6 +38,7 @@ rm ~/simple_latest.zip
 cd ~
 sudo apt-get install retroarch -y
 sudo apt-get install -y libretro-beetle-pce-fast libretro-bsnes-mercury-balanced libretro-genesisplusgx libretro-beetle-psx libretro-bsnes-mercury-performance libretro-mgba libretro-beetle-vb libretro-core-info libretro-nestopia libretro-beetle-wswan libretro-desmume libretro-snes9x libretro-bsnes-mercury-accuracy libretro-gambatte
+sudo ln -sf /usr/lib/aarch64-linux-gnu/libretro ~/cores
 
 # Dolphin Emulator
 cd ~
