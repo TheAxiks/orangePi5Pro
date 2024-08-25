@@ -11,7 +11,7 @@ cd EmulationStation
 mkdir build
 cd build
 cmake ..
-make -j8
+# make -j8
 sed -i '1s/^/#include <stack>\n/' ../es-app/src/views/gamelist/ISimpleGameListView.h
 make -j8
 sudo make install
@@ -19,6 +19,8 @@ sudo make install
 # Fist theme
 cd ~
 curl -O https://emulationstation.org/downloads/themes/simple_latest.zip
+mkdir .emulationstation
+mkdir .emulationstation/themes
 unzip ~/simple_latest.zip -d ~/.emulationstation/themes
 rm ~/simple_latest.zip
 
