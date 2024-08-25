@@ -2,6 +2,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade -y
+sudo apt-get install git build-essential
 
 # Emulationstation
 cd ~
@@ -36,9 +37,24 @@ rm ~/simple_latest.zip
 
 # Retroarch
 cd ~
-sudo apt-get install retroarch -y
-sudo apt-get install -y libretro-beetle-pce-fast libretro-bsnes-mercury-balanced libretro-genesisplusgx libretro-beetle-psx libretro-bsnes-mercury-performance libretro-mgba libretro-beetle-vb libretro-core-info libretro-nestopia libretro-beetle-wswan libretro-desmume libretro-snes9x libretro-bsnes-mercury-accuracy libretro-gambatte
-sudo ln -sf /usr/lib/aarch64-linux-gnu/libretro ~/cores
+# sudo apt-get install retroarch -y
+# sudo apt-get install -y libretro-beetle-pce-fast libretro-bsnes-mercury-balanced libretro-genesisplusgx libretro-beetle-psx libretro-bsnes-mercury-performance libretro-mgba libretro-beetle-vb libretro-core-info libretro-nestopia libretro-beetle-wswan libretro-desmume libretro-snes9x libretro-bsnes-mercury-accuracy libretro-gambatte
+# git clone https://github.com/libretro/RetroArch.git retroarch
+sudo apt-get install libx11-xcb-dev
+# cd retroarch
+# git pull
+# ./configure
+# make clean
+# make -j8
+# sudo make install
+
+# Cores
+cd ~
+git clone https://github.com/libretro/libretro-super.git
+cd libretro-super
+./libretro-fetch.sh
+./libretro-build.sh
+# sudo ln -sf /usr/lib/aarch64-linux-gnu/libretro ~/cores
 
 # Dolphin Emulator
 cd ~
