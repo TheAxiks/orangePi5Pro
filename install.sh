@@ -23,11 +23,11 @@ unzip ~/simple_latest.zip -d ~/.emulationstation/themes
 rm ~/simple_latest.zip
 
 # Thememaster
-cd ~
-curl -O https://codeload.github.com/JohnIrvine1433/ThemeMaster/legacy.zip/refs/heads/master
-unzip -j ~/master JohnIrvine1433-ThemeMaster-179786d/ThemeMaster.sh -d ~/roms/tools/
-unzip -j ~/master JohnIrvine1433-ThemeMaster-179786d/ThemeMaster/* -d ~/roms/tools/ThemeMaste
-rm ~/master
+# cd ~
+# curl -O https://codeload.github.com/JohnIrvine1433/ThemeMaster/legacy.zip/refs/heads/master
+# unzip -j ~/master JohnIrvine1433-ThemeMaster-179786d/ThemeMaster.sh -d ~/roms/tools/
+# unzip -j ~/master JohnIrvine1433-ThemeMaster-179786d/ThemeMaster/* -d ~/roms/tools/ThemeMaste
+# rm ~/master
 
 # Retroarch
 cd ~
@@ -48,11 +48,11 @@ make -j8
 sudo make install
 
 # PortMaster
-cd ~
-git clone https://github.com/PortsMaster/PortMaster-Releases.git
-mv ~/PortMaster-Releases/PortMaster ~/roms/tools/
-mkdir ~/roms/tools/PortMaster/autoinstall
-mv ~/PortMaster-Releases/*.zip ~/roms/tools/PortMaster/autoinstall
+# cd ~
+# git clone https://github.com/PortsMaster/PortMaster-Releases.git
+# mv ~/PortMaster-Releases/PortMaster ~/roms/tools/
+# mkdir ~/roms/tools/PortMaster/autoinstall
+# mv ~/PortMaster-Releases/*.zip ~/roms/tools/PortMaster/autoinstall
 
 
 
