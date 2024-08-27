@@ -37,6 +37,7 @@ rm ~/simple_latest.zip
 
 # Retroarch
 cd ~
+# download cores: https://raw.githubusercontent.com/christianhaitian/retroarch-cores/master/aarch64/
 # sudo apt-get install retroarch -y
 # sudo apt-get install -y libretro-beetle-pce-fast libretro-bsnes-mercury-balanced libretro-genesisplusgx libretro-beetle-psx libretro-bsnes-mercury-performance libretro-mgba libretro-beetle-vb libretro-core-info libretro-nestopia libretro-beetle-wswan libretro-desmume libretro-snes9x libretro-bsnes-mercury-accuracy libretro-gambatte
 # git clone https://github.com/libretro/RetroArch.git retroarch
